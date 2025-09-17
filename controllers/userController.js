@@ -170,7 +170,7 @@ export const feedback = async (req, res) => {
 
 export const viewFeedback = async (req, res) => {
     try {
-        const eventId = req.params.id;   // extract event id from request URL
+        const eventId = req.params.id;   
         logger.info(`view feedbacks requested for event: ${eventId}`);
 
         // query DB: find all feedbacks for that event, and populate only userName from User model
